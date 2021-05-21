@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}Login Page{% endblock %}
+
+{% block content %}
+    <div>
+        <form action="" method="POST">
+            <label>Email Address</label><br/>
+            <input type="email" name="email" placeholder="write your username"><br><br>
+            <label>Password</label><br/>
+            <input type="password" name="password" placeholder="write your password"><br/><br/>
+            <input type="submit" value="LOGIN"><br/><br/>
+        </form>
+    </div>
+    <div>
+        <form action="/new">
+            <label>New Here?</label>
+            <input type="submit" value="REGISTER"><br/><br/>
+        </form>
+    </div>
+{% endblock %}
+
